@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/imgs/inaya_pfp.gif">
+    <link rel="icon" href="assets/imgs/alvz.gif">
     
     <title>SeltonAlvz</title>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,6 +18,12 @@
 
 </head>
 <body>
+    <!--Contador-->
+    <div id="contador-visualizacoes">
+        <span class="contador-icone">&#x1F441;</span>
+        <span class="contador-numero">0</span>
+      </div>
+      
 
     <header>
         <nav>
@@ -51,8 +57,9 @@
       </audio>
       <button id="playButton" class="play"><i class="fa fa-play"></i></button>
       <script>
+        //Play e pause junto
         var audio = document.getElementById("myAudio");
-var playButton = document.getElementById("playButton");
+        var playButton = document.getElementById("playButton");
 
 playButton.addEventListener("click", function() {
   if (audio.paused) {
@@ -65,7 +72,12 @@ playButton.addEventListener("click", function() {
     playButton.classList.add("play");
   }
 });
-
+    //contador
+    var contador = document.getElementById("contador-visualizacoes");
+    var numero = localStorage.getItem("visualizacoes") || 0;
+numero = parseInt(numero) + 1;
+localStorage.setItem("visualizacoes", numero);
+contador.querySelector(".contador-numero").textContent = numero;
       </script>
 
       

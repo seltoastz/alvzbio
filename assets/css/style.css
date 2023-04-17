@@ -197,6 +197,7 @@ p2{
   border: none;
   cursor: pointer;
   color: white;
+  animation: fadeInUp .8s;
 }
 
 #playButton:focus {
@@ -219,4 +220,30 @@ p2{
   transform: rotate(360deg);
 }
 
+#contador-visualizacoes {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff00;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+    z-index: 9999;
+  }
+  
+  .contador-icone {
+    font-size: 20px;
+    animation: fadeInDown .8s;
+  }
+  
+  .contador-numero {
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    animation: fadeInDown .8s;
+  }  
   
