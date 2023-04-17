@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/imgs/inaya_pfp.gif">
+    
+    <title>SeltonAlvz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- javaiscripiti -->
+    
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="header_logo">
+                <img src="assets/imgs/yoshi.gif" alt="" srcset="">
+            </div>
+            <div class="header_links">
+                <ul class="nav_links">
+                    <!-- <li class="nav_link"><a href="#">Shop</a></li> -->
+                    <!-- <li class="nav_link"><a href="#">Repos</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main">
+        <img src="assets/imgs/alvz.gif" alt="" srcset="">
+        <span>SeltonAlvz</span>
+        <p>19 Anos, amo jogos, dificilmente você me achará.</p>
+        <ul>
+            <li><a target="_blank" href="https://discord.gg/FFuNwgJDYu"><i class="fab fa-discord"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/seltonalvz/"><i class="fab fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/alvzgallery/"><i class="fa light fa-lock"></i></a></li>
+        </ul>
+        <p2>Music: Life Is Beautiful  Lil Peep</p>
+    </section>
+
+    <audio id="myAudio">
+        <source src="assets\Life Is Beautiful  Lil Peep(AlvzMAster).mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+      </audio>
+      <button id="playButton" class="play"><i class="fa fa-play"></i></button>
+      <script>
+        var audio = document.getElementById("myAudio");
+var playButton = document.getElementById("playButton");
+
+playButton.addEventListener("click", function() {
+  if (audio.paused) {
+    audio.play();
+    playButton.classList.remove("play");
+    playButton.classList.add("pause");
+  } else {
+    audio.pause();
+    playButton.classList.remove("pause");
+    playButton.classList.add("play");
+  }
+});
+
+      </script>
+
+      
+
+</body>
+</html>
