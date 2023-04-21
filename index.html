@@ -74,7 +74,7 @@ playButton.addEventListener("click", function() {
 });
     //contador
     var contador = document.getElementById("contador-visualizacoes");
-    var numero = localStorage.getItem("visualizacoes") || 0;
+    var numero = localStorage.getItem("visualizacoes") || 777;
 numero = parseInt(numero) + 1;
 localStorage.setItem("visualizacoes", numero);
 contador.querySelector(".contador-numero").textContent = numero;
